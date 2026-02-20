@@ -50,7 +50,11 @@ docker run -p 3000:3000 crud-api
 
 # Kubernetes Deployment
 
-Always run eval $(minikube docker-env) before building images for Minikube
+Always run --- before building images for Minikube
+
+```
+eval $(minikube docker-env) 
+```
 
 Apply manifests:
 
