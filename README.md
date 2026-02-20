@@ -1,23 +1,3 @@
-# CRUD API Node.js
-
-A production-ready **CRUD API** built with Node.js, following best practices for **DevOps and Kubernetes deployment**.
-
----
-
-## Features
-- Layered architecture: Controllers → Services → Validators
-- Input validation using **Zod**
-- Centralized error handling
-- RESTful API with consistent responses
-- Pagination support
-- Containerized with **Docker** (multi-stage build, non-root user)
-- Kubernetes-ready:
-  - Deployment
-  - Service (ClusterIP)
-  - Horizontal Pod Autoscaler (HPA)
-  - Liveness & readiness probes
-- CI/CD ready project structure
-
 ---
 
 ## API Endpoints
@@ -69,6 +49,8 @@ docker run -p 3000:3000 crud-api
 ```
 
 # Kubernetes Deployment
+
+Always run eval $(minikube docker-env) before building images for Minikube
 
 Apply manifests:
 
